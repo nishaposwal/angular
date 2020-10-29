@@ -1,5 +1,5 @@
 .body{
-    background-color: rgb(4, 247, 153);
+    background-color:  rgb(22, 1, 13);
     width: 100%;
     min-height: 100vh;
 }
@@ -8,46 +8,9 @@
     width: 90%;
     margin: auto;
    padding-top: 50px;
+   color: #F0AD4E;
 }
 
-.right  {
-    float: right;
-    
-}
-
-.nav-link{
-    color: white;
-}
-
-.logo{
-    font-size: 4rem;
-    color: white;
-    font-weight: bolder;
-}
-
-.nav{
-    /* border:  2px solid black; */
-}
-
-.nav ul {
-    float: right;
-    list-style: none;
-
-}
-.nav ul li{
-    display: inline;
-    padding: 10px 20px;
-
-}
-.nav ul li a{
-    text-decoration: none;
-    color: white;
-    font-size: 1.8rem;
-}
-
-.nav ul li a:hover{
-    color: rgb(236, 227, 227);
-}
 .home-content{
     font-family: 'Grandstander', cursive;
     margin-top: 50px;
@@ -72,18 +35,31 @@
 }
 
 .home-content button{
-border:  1.5px solid black;
+border:  1.5px solid #F0AD4E;
 padding: 8px 15px;
 background: transparent;
 font-family: 'Grandstander', cursive;
 font-weight: bold;
 font-size: 1.3rem;
-margin-right: 40px;
-color: rgb(31, 25, 25);
+margin: 0px;
+color: #F0AD4E;
 transition-property: all;
 transition-duration: 0.3S;
 margin-top: 20px;
+animation-name: apart;
+animation-duration: 1s;
+animation-delay: 0.5s;
+animation-fill-mode: forwards;
 
+}
+@keyframes apart{
+    from{
+    margin: 0px;
+    }
+    to{
+     margin: 40px;
+     margin-left: 0;
+    }
 }
 
 .btn{

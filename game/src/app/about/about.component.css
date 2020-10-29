@@ -1,0 +1,98 @@
+.about-content{
+    position: absolute;
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(22, 1, 13);
+    color: #F0AD4E;
+    padding-top: 50px;
+    font-family: 'Grandstander', cursive;
+   
+}
+.heading{
+    width: 90%;
+    margin: auto;
+    position: relative;
+    top: -1000px;
+    left: -100%;
+    background: 2px solid black;
+    animation-name: about-heading;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes about-heading {
+from{
+    left: -100%;
+    top: -1000px;
+}
+to{
+    left: 0;
+    top: 0px;
+}
+}
+
+.description{
+    width: 90%;
+    margin: auto;
+    /* border: 2px solid red; */
+}
+
+.description p{
+    position: relative;
+    width: 500px;
+    top: -1000px;
+    animation-name: description;
+    animation-delay: 1s;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes description{
+from{
+    top: -1000px;
+}
+to{
+    top: 0px;
+}
+}
+
+.buttons{
+position: relative;
+  width: 90%;
+  margin: auto;
+  margin-top: 30px;
+  top: -1000px;
+  animation-name: button;
+  animation-duration: 1s;
+  animation-delay: 1.5s;
+  animation-fill-mode: forwards;
+ 
+ 
+}
+
+@keyframes button{
+    from{
+        top: -1000px;
+      
+    }
+    to{
+        top: 0px;
+       
+    }
+}
+
+.buttons button{
+    border:  1.5px solid #F0AD4E;
+    padding: 8px 25px;
+    background: transparent;
+    font-family: 'Grandstander', cursive;
+    font-weight: bold;
+    font-size: 1.3rem;
+    transition-property: all;
+transition-duration: 0.3S;
+}
+
+.buttons button:hover {
+transform: scale(1.3);
+}

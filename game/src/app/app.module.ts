@@ -8,6 +8,9 @@ import { BoardComponent } from './board/board.component';
 import { BoxComponent } from './box/box.component';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
+import { BlessingsComponent } from './blessings/blessings.component';
+
+
 
 
 const routes: Routes = [
@@ -16,6 +19,12 @@ const routes: Routes = [
   },
   {
      path: 'game' , component: BoardComponent
+  },
+  {
+    path: 'about' , component: AboutComponent
+  },
+  {
+    path: 'blessings', component: BlessingsComponent
   }
 
 ];
@@ -25,14 +34,19 @@ const routes: Routes = [
     BoardComponent,
     BoxComponent,
     HomeComponent,
-    AboutComponent
+    AboutComponent,
+    BlessingsComponent,
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     RouterModule.forRoot(routes),
   ],
-  exports: [RouterModule],
+  exports: [
+    RouterModule,
+   
+  ],
   providers: [],
   bootstrap: [AppComponent]
 })
