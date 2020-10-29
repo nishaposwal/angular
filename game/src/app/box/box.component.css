@@ -3,4 +3,8 @@ button {
      height: 100%; 
      font-size: 5em;
      color: rgb(28, 9, 46);
-    }
+}
+
+h1{
+color: yellow;
+}
