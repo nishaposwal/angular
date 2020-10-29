@@ -1,0 +1,28 @@
+
+<div class="container">
+    <div class="title">
+        <h1>
+           Chillax Tic-Tac-Toe
+        </h1>
+        <div class="winnermsg" *ngIf="end; else elseblock">
+            <span class="msg">Winner : {{endmsg }}</span>
+            <button class="btn btn-light play" (click)="newGame()" >Play-Again</button> 
+        </div>
+        <ng-template #elseblock>
+            <p class="msg">Trun: {{player}}</p>
+        </ng-template>
+       
+        
+
+        </div>
+        <div class="grid-container">
+            <main>
+                <app-box
+                *ngFor="let val of squares; let i = index" 
+                [value]="val"
+                (click)=" makeMove(i)"> 
+            
+            </app-box>
+            </main>
+        </div>
+</div>
