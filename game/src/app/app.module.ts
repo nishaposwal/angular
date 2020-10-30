@@ -3,12 +3,15 @@ import { NgModule } from '@angular/core';
 import {FormsModule} from '@angular/forms'
 import { AppRoutingModule } from './app-routing.module';
 import {RouterModule, Routes} from '@angular/router';
+import { HttpClientModule} from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { BoardComponent } from './board/board.component';
 import { BoxComponent } from './box/box.component';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { BlessingsComponent } from './blessings/blessings.component';
+import { from } from 'rxjs';
+
 
 
 
@@ -42,10 +45,12 @@ const routes: Routes = [
     BrowserModule,
     AppRoutingModule,
     RouterModule.forRoot(routes),
-    FormsModule
+    FormsModule,
+   HttpClientModule
   ],
   exports: [
     RouterModule,
+    FormsModule
    
   ],
   providers: [],
