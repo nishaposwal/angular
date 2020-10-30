@@ -1,1 +1,30 @@
-<p>blessings works!</p>
+<div class="bless-container">
+    <div class="form-container">
+        <form>
+            <div class="form-group">
+                <label for="name">Name*</label>
+                <input name="name" ngModel type="text" class="form-control" id="name" placeholder="Enter your name">
+              </div>
+            <div class="form-group">
+              <label for="email">Email address*</label>
+              <input ngModel name="email" type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Email">
+              <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+            </div>
+            <div class="form-group">
+                <label for="bless">Say Somthing Nice*</label>
+                <input name="bless" type="text" class="form-control" id="bless" placeholder="Your words here" ngModel>
+              </div>
+            <div class="button">
+                <button type="submit" class="btn btn-primary sub">Submit</button>
+            </div>
+          </form>
+    </div>
+    <div class="words-container">
+        <div class="single-card">
+            <h2>Name</h2>
+            <p>example@gmail.com</p>
+            <p>hello there!! i ike your work don so far. tahnk tou for inspiration</p>
+            <button class="sub">delete</button>
+        </div>
+    </div>
+</div>
