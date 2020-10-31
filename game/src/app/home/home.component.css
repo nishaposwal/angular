@@ -50,6 +50,7 @@ animation-name: apart;
 animation-duration: 1s;
 animation-delay: 0.5s;
 animation-fill-mode: forwards;
+min-width: 100px;
 
 }
 @keyframes apart{
